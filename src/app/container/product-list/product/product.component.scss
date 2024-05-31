@@ -1,0 +1,77 @@
+   .app16--product--item{
+        width: 290px;
+        background-color: #FDFEFE;
+        margin: 10px 10px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border: #efefef 2px solid;
+    
+
+
+    .app16--product--item:hover{
+        -webkit-box-shadow:0 0 1px 3px #000 inset;
+        -moz-box-shadow: 0 0 1px 3px #000 inset;
+        border: #efefef 2px solid;
+        box-shadow: 10px 10px 18px #cccccc;
+        transform: scale(1.05);
+    }
+
+
+    .app16--wishlist--sale--container{        
+        display: inline-block;
+        width:270px;
+        position: absolute;
+        padding: 5px 0px;
+    }
+
+
+    .app16--add--to--wish--list{        
+        padding: 2px 10px;
+        text-align: right;
+        font-size: 22px; 
+        position: absolute;
+    }
+
+    // tag
+    .app16--on--sale--tag{
+        float: right;
+        font-size: 14px;
+        margin-top: 5px;
+        margin-right: -2px;
+        padding: 5px 10px;
+        background-color: #FFC000;
+        color: #282828;
+        font-weight: bold;
+    }
+
+    .app16--add--to--price{
+        padding: 1px 5px;
+        position: absolute;
+        margin-top: -25px;
+        background-color: #282828;
+        color: white;
+    }
+
+    .app16--product--image{
+        width: 265px;
+        height: 250px;
+    }
+
+    .app16--product--name{
+        font-size: 14px;
+        color: #282828;
+        margin-top: 7px;
+    }
+
+    .app16--product--category,
+    .app16--product--in--stock,
+    .app16--product--avaiable--color{
+        font-size: 14px;
+        color: #999;
+        margin-top: 7px;
+
+    }
+
+}

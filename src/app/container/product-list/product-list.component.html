@@ -1,0 +1,9 @@
+<app-filter 
+    [all]="totalProductCount" 
+    [inStock]="totalProcuctInStock"
+    [outOfStock]="totalProcuctOutOfStock"
+    ></app-filter>
+
+<div class="app16-products-container">
+   <product *ngFor="let p of products" [product]="p"></product> 
+</div>

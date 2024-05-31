@@ -1,0 +1,12 @@
+<div class="app16--search--product">
+    <input class="app16--search--product--input" [(ngModel)] ="searchText">
+    <button class="jaj" [ngClass]="{'btn':true, 'btn-search':searchText, 'btn-search-disabled': !searchText}" [disabled]="!searchText" (click)="activeButton($event)">Search</button>    
+</div>
+
+<div class="app16-search-result-for"> 
+    <p *ngIf="searchText != ''"><strong>Search result for</strong> {{searchText}}</p>
+</div>
+<!-- <div class="qpp16-product-container-header">
+    <h2>SHOES</h2>
+</div>
+<div class="app16-products-container"></div> -->

@@ -1,0 +1,9 @@
+<div>
+    <P>Today: {{birthday | date: 'medium' | uppercase }}</P>
+</div>
+
+<button type="button" (click)="dec()">-</button>
+<span [style.font-size.px]="size"> font Size {{size}}px</span>
+<button type="button" (click)="inc()">+</button>
+
+
