@@ -111,4 +111,10 @@ totalProductCount = this.products.length;
 totalProcuctInStock = this.products.filter( p => p.is_in_inventory === true).length;
 totalProcuctOutOfStock = this.products.filter( p => p.is_in_inventory === false).length;
 
+selectedFilterRadioButton : string = 'all';
+
+onFilterChanged(value : string){  
+  this.selectedFilterRadioButton = value;
+}
+
 }
