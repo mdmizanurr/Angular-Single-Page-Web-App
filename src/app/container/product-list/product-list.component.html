@@ -6,9 +6,10 @@
     ></app-filter>
 
 <div class="app16-products-container">
+    <!-- *ngIf="selectedFilterRadioButton === 'all' || p.is_in_inventory.toString() === selectedFilterRadioButton  " -->
     <div *ngFor="let p of products">
         <product  [product]="p" 
-        *ngIf="selectedFilterRadioButton === 'all' || p.is_in_inventory.toString() === selectedFilterRadioButton  "
+        *ngIf=" searchText ==='' || p.name.toLocaleLowerCase().includes(searchText)" 
         ></product> 
     </div>
    

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'product-list',
@@ -111,10 +111,14 @@ totalProductCount = this.products.length;
 totalProcuctInStock = this.products.filter( p => p.is_in_inventory === true).length;
 totalProcuctOutOfStock = this.products.filter( p => p.is_in_inventory === false).length;
 
+@Input()
+searchText : string = "";
+
 selectedFilterRadioButton : string = 'all';
 
 onFilterChanged(value : string){  
-  this.selectedFilterRadioButton = value;
+  console.log(value)
+  this.selectedFilterRadioButton = value; 
 }
 
 }

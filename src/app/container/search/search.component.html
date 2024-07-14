@@ -1,5 +1,5 @@
 <div class="app16--search--product">
-    <input class="app16--search--product--input" [(ngModel)] ="searchText">
+    <input class="app16--search--product--input" [(ngModel)] ="searchText" (input)="onSearchTextChanged()">
     <button class="jaj" [ngClass]="{'btn':true, 'btn-search':searchText, 'btn-search-disabled': !searchText}" [disabled]="!searchText" (click)="activeButton($event)">Search</button>    
 </div>
 

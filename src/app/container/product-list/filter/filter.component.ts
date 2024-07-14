@@ -24,7 +24,7 @@ export class FilterComponent {
 
   onSelectedFilterRadioButtonChanged(){
     console.log("selectedFilterRadioButtonChanged change event")
-    this.selectedFilterRadioButtonChanged .emit(this.selectedFilterRadioButton);
+    this.selectedFilterRadioButtonChanged.emit(this.selectedFilterRadioButton);
   }
 
 
