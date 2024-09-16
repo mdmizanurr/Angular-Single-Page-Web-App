@@ -1,0 +1,65 @@
+<div class="app16-product-details-info scroll">
+    <div class="app16-product-detail-close">
+        <i class="fa fa-times" aria-hidden="true"></i>
+    </div>
+    <div class="app16-product-detail-image">
+         <!-- <img src="/assets/images/nike-joyride-001.jpg" style="width: 430px; height: 320px;" > -->
+         <img [src]="product.imageUrl" style="width: 430px; height: 320px;" >
+    </div>
+
+    <div class="app16-product-detail">
+        <div class="app16-product-detail-name">
+            <h2>{{product.name}}</h2>
+        </div>
+        <div class="app16-product-detail-gbc">
+            <span>{{product.gender}}</span>
+            <span>{{product.brand}}</span>
+            <span>{{product.category}}</span>
+        </div>
+        <div class="app16-product-detail-price">
+            <p>
+                <b>Price each pair : </b>
+                <span style="background-color: red; color: white;"><s>$699</s></span>
+                <span style="background-color:green; color: white;"> $599</span>  (Inclusive of all taxes)
+            </p>
+        </div>
+
+        <div class="app16-product-detail-size">
+            <div style="padding: 5px 0px; border-bottom: #ccc 2px solid;">
+                <h4>Available Size</h4>
+            </div>
+            <div style="margin-top: 20px;">
+            <span class="app16-product-deatil-available-size"
+                *ngFor="let size of product.size">{{size}} </span>              
+            </div>
+        </div>
+
+        <div class="app16-product-detail-color">
+            <div style="padding: 5px 0px; border-bottom: #ccc 2px solid;">
+                <h4>Available Color</h4>
+            </div>
+
+            <div style="margin-top: 20px;">
+                <span class="app16-product-deatil-available-color" 
+                    *ngFor="let colors of product.color" 
+                    [ngStyle]="{'background-color': colors}">
+                </span>
+            </div>
+
+        </div>
+
+        <div class="app16-product-detail-desc">
+            <div style="padding: 5px 0px; border-bottom: #ccc 2px solid;">
+                <h4>Product Description</h4>
+            </div>
+            <div style="margin-top: 20px;">
+                <p>Description</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="app16-product-detail-addtoCart">
+        <button class="btn-add-to-cart">ADD TO CART</button>
+    </div>
+</div>
+<div class="overlay"></div>

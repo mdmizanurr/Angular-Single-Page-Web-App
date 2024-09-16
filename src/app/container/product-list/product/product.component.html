@@ -3,7 +3,8 @@
         <div class="app16--add--to--wish--list">
         <i class="fa fa-heart-o" aria-hidden="true"></i>         
     </div>
-    <div class="app16--on--sale--tag" *ngIf="product.discountPrice > 0">{{ (100 - (product.discountPrice/product.price * 100)).toFixed(0)}}% OFF</div>
+    <div class="app16--on--sale--tag" 
+        *ngIf="product.discountPrice > 0">{{ (100 - (product.discountPrice/product.price * 100)).toFixed(0)}}% OFF</div>
     </div>
 
     <div class="app16--product--image">

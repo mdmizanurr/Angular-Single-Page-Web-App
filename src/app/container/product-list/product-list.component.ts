@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Product } from './../../Models/Product';
 
 @Component({
   selector: 'product-list',
@@ -6,6 +7,8 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./product-list.component.scss']
 })
 export class ProductListComponent {
+
+    selectedProduct : Product;
 
   products= [
     {
@@ -15,7 +18,7 @@ export class ProductListComponent {
       brand: 'NIKE',
       gender:'MALE',
       category: 'RUNNING',
-      size: [7, 8, 9, 10, 11],
+      size: [ 8, 9, 10, 11],
       color:['White', 'Blue', 'Black', 'Brown', 'Red'],
       price: 15205,
       discountPrice:0,
@@ -31,7 +34,7 @@ export class ProductListComponent {
       brand: 'NIKE',
       gender:'FEMALE',
       category: 'RUNNING',
-      size: [7, 8, 9, 10, 11],
+      size: [7,  9, 10, 11],
       color:['White', 'Blue', 'Black', 'Brown', 'Red'],
       price: 1505,
       discountPrice: 1000,
@@ -47,7 +50,7 @@ export class ProductListComponent {
       brand: 'NIKE',
       gender:'MALE',
       category: 'RUNNING',
-      size: [7, 8, 9, 10, 11],
+      size: [7, 8, 11],
       color:['White', 'Blue', 'Black', 'Brown', 'Red'],
       price: 15205,
       discountPrice:0,
@@ -64,7 +67,7 @@ export class ProductListComponent {
       brand: 'NIKE',
       gender:'MALE',
       category: 'RUNNING',
-      size: [7, 8, 9, 10, 11],
+      size: [ 9, 10, 11],
       color:['White', 'Blue', 'Black', 'Brown', 'Red'],
       price: 15205,
       discountPrice:0,
@@ -79,8 +82,8 @@ export class ProductListComponent {
       description:'',
       brand: 'NIKE',
       gender:'FEMALE',
-      category: 'RUNNING',
-      size: [7, 8, 9, 10, 11],
+      category: 'SPORTS',
+      size: [7, 8, 9, 10],
       color:['White', 'Blue', 'Black', 'Brown', 'Red'],
       price: 1205,
       discountPrice: 1000,
@@ -96,7 +99,7 @@ export class ProductListComponent {
       brand: 'NIKE',
       gender:'MALE',
       category: 'RUNNING',
-      size: [7, 8, 9, 10, 11],
+      size: [7, 8, 11],
       color:['White', 'Blue', 'Black', 'Brown', 'Red'],
       price: 15205,
       discountPrice:0,

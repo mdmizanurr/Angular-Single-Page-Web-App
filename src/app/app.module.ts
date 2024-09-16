@@ -15,11 +15,12 @@ import { TestComponent } from './test/test.component';
 import { TopHeaderComponent } from './top-header/top-header.component';
 import { ProductComponent } from './container/product-list/product/product.component';
 import { FilterComponent } from './container/product-list/filter/filter.component';
+import { ProductDetailComponent } from './container/product-detail/product-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent, HeaderComponent, TopHeaderComponent, TopMenuComponent, 
-    MainMenuComponent, TestComponent, ContainerComponent, SearchComponent, ProductListComponent, ProductComponent, FilterComponent
+    MainMenuComponent, TestComponent, ContainerComponent, SearchComponent, ProductListComponent, ProductComponent, FilterComponent, ProductDetailComponent
   ],
   imports: [
     BrowserModule,
